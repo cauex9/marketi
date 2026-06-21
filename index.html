@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 12 128 GB Branco - Usado - R$ 600 - Mercado Livre</title>
+    <!-- Favicon parecido com o Mercado Livre -->
+    <link rel="icon" type="image/png" href="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/shared/artworks/mercadolibre/favicon.svg">
+    <!-- Google Fonts: Inter para simular a tipografia limpa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones adicionais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO MERCADO LIVRE -->
+    <header class="ml-header">
+        <div class="header-container">
+            <!-- Linha Superior: Logo, Busca, Banner de Promoção -->
+            <div class="header-top">
+                <a href="#" class="logo-container" id="header-logo">
+                    <img src="foto/baixados.jpg" alt="Mercado Livre" class="ml-logo">
+                </a>
+
+                <form class="search-form" id="main-search-form" action="#" method="GET">
+                    <input type="text" class="search-input" id="search-input-field" placeholder="Buscar produtos, marcas e muito mais..." autocomplete="off">
+                    <button type="submit" class="search-btn" id="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Sugestões de busca simuladas -->
+                    <div class="search-suggestions" id="search-suggestions-dropdown">
+                        <div class="suggestion-item"><i class="fa-solid fa-clock-rotate-left"></i> iphone 12 pro max</div>
+                        <div class="suggestion-item"><i class="fa-solid fa-clock-rotate-left"></i> iphone 11 128gb</div>
+                        <div class="suggestion-item"><i class="fa-solid fa-magnifying-glass"></i> carregador iphone 12 original</div>
+                        <div class="suggestion-item"><i class="fa-solid fa-magnifying-glass"></i> capinha iphone 12</div>
+                    </div>
+                </form>
+
+                <div class="promo-header-banner">
+                    <a href="#"><img src="https://http2.mlstatic.com/dflat/shopify/admin/images/header-disney.png" alt="Promoção Disney+" class="disney-banner-img" onerror="this.style.display='none'">
+                    <span class="promo-text-fallback"><i class="fa-solid fa-bolt"></i> Frete grátis a partir de R$79</span></a>
+                </div>
+            </div>
+
+            <!-- Linha Inferior: Localização, Links Rápidos, Perfil e Carrinho -->
+            <div class="header-bottom">
+
+
+                <nav class="nav-menu" id="header-navigation-menu">
+                    <ul>
+                        <li><a href="#" class="nav-link active-category">Categorias <i class="fa-solid fa-chevron-down nav-chevron"></i></a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Histórico</a></li>
+                        <li><a href="#">Supermercado</a></li>
+                        <li><a href="#">Moda</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="user-menu-container">
+                    <span class="user-welcome"><i class="fa-regular fa-user"></i> Bruno <i class="fa-solid fa-chevron-down nav-chevron"></i></span>
+                    <a href="#" class="header-link">Minhas compras</a>
+                    <a href="#" class="header-link">Favoritos</a>
+                    <a href="#" class="header-link notifications-bell"><i class="fa-regular fa-bell"></i></a>
+                    <a href="#" class="header-link cart-icon-container" id="shopping-cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge" id="cart-counter">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NOTIFICAÇÃO TOAST (AO ADICIONAR NO CARRINHO) -->
+    <div class="toast-notification" id="toast-cart">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div class="toast-text">
+                <span class="toast-title">Adicionado ao carrinho!</span>
+                <span class="toast-subtitle" id="toast-product-name">iPhone 12 128 GB Preto</span>
+            </div>
+        </div>
+        <button class="toast-close" id="close-toast">&times;</button>
+    </div>
+
+    <!-- ÁREA PRINCIPAL DO PRODUTO -->
+    <main class="product-main-container">
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs-container">
+            <span class="breadcrumb-back"><a href="#">Voltar à lista</a></span>
+            <span class="breadcrumb-divider">|</span>
+            <nav class="breadcrumb-list">
+                <a href="#">Celulares e Telefones</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+                <a href="#">Celulares e Smartphones</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+                <a href="#">iPhone</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+                <a href="#" class="breadcrumb-active">iPhone 12</a>
+            </nav>
+        </div>
+
+        <!-- CONTAINER DO PRODUTO -->
+        <div class="product-detail-layout">
+            
+            <!-- COLUNA ESQUERDA: IMAGENS, ESPECIFICAÇÕES, DESCRIÇÃO, PERGUNTAS, OPINIÕES -->
+            <div class="product-left-column">
+                
+                <!-- ÁREA DE IMAGENS -->
+                <div class="gallery-wrapper">
+                    <!-- Miniaturas de imagem -->
+                    <div class="thumbnails-column" id="product-thumbnails">
+                        <!-- Gerado dinamicamente no JS para corresponder à cor selecionada -->
+                    </div>
+                    <!-- Imagem Principal -->
+                    <div class="main-image-container" id="main-image-viewport">
+                        <img src="assets/iphone_12_black.png" alt="iPhone 12 Principal" class="main-product-image" id="main-product-img">
+                        <!-- Elemento de lupa para efeito de zoom -->
+                        <div class="zoom-lens" id="image-zoom-lens"></div>
+                    </div>
+                </div>
+
+                <!-- CARACTERÍSTICAS PRINCIPAIS -->
+                <section class="section-container" id="key-features">
+                    <h2 class="section-title">Características principais</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-name">Marca</span>
+                            <span class="feature-value">Apple</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-name">Linha</span>
+                            <span class="feature-value">iPhone</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-name">Modelo</span>
+                            <span class="feature-value" id="spec-model-name">iPhone 12</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-name">Memória interna</span>
+                            <span class="feature-value" id="spec-storage-val">128 GB</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-name">Cor</span>
+                            <span class="feature-value" id="spec-color-val">Preto</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-name">Rede móvel</span>
+                            <span class="feature-value">5G</span>
+                        </div>
+                    </div>
+                    <a href="#all-specs" class="view-more-link">Ver todas as características</a>
+                </section>
+
+                <!-- OUTRAS CARACTERÍSTICAS / TABELA TÉCNICA -->
+                <section class="section-container" id="all-specs">
+                    <h2 class="section-title">Ficha técnica completa</h2>
+                    <table class="specs-table">
+                        <tbody>
+                            <tr class="table-row-title"><td colspan="2">Tela</td></tr>
+                            <tr><td class="spec-label">Tamanho da tela</td><td class="spec-detail">6.1 "</td></tr>
+                            <tr><td class="spec-label">Tecnologia da tela</td><td class="spec-detail">Super Retina XDR OLED</td></tr>
+                            <tr><td class="spec-label">Resolução da tela</td><td class="spec-detail">2532 px x 1170 px (460 ppi)</td></tr>
+                            
+                            <tr class="table-row-title"><td colspan="2">Câmera</td></tr>
+                            <tr><td class="spec-label">Câmera traseira principal</td><td class="spec-detail">Dual 12 Mpx + 12 Mpx (Grande angular e Ultra-angular)</td></tr>
+                            <tr><td class="spec-label">Câmera frontal principal</td><td class="spec-detail">12 Mpx (Abertura f/2.2)</td></tr>
+                            <tr><td class="spec-label">Zoom óptico</td><td class="spec-detail">2x</td></tr>
+                            
+                            <tr class="table-row-title"><td colspan="2">Processador e Bateria</td></tr>
+                            <tr><td class="spec-label">Processador</td><td class="spec-detail">Apple A14 Bionic</td></tr>
+                            <tr><td class="spec-label">Bateria</td><td class="spec-detail">Íons de lítio (Carregamento sem fio MagSafe e Qi)</td></tr>
+                            <tr><td class="spec-label">Autonomia de reprodução de vídeo</td><td class="spec-detail">Até 17 horas</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- DESCRIÇÃO COMPLETA -->
+                <section class="section-container" id="product-description">
+                    <h2 class="section-title">Descrição</h2>
+                    <div class="description-content">
+                        <p class="desc-p">O iPhone 12 tem tela Super Retina XDR brilhante de 6,1 polegadas. Parte frontal em Ceramic Shield, quatro vezes mais resistente a quedas. Fotos incríveis em pouca luz com o modo Noite em todas as câmeras. Gravação, edição e reprodução de vídeos em Dolby Vision com qualidade de cinema. Poderoso chip A14 Bionic. E novos acessórios MagSafe com encaixe fácil e recarga sem fio mais rápida. Que comece a diversão.</p>
+                        <p class="desc-p"><strong>Recursos em destaque:</strong></p>
+                        <ul>
+                            <li>Tela Super Retina XDR de 6,1 polegadas.</li>
+                            <li>Ceramic Shield, mais resistente do que qualquer vidro de smartphone.</li>
+                            <li>Rede 5G para downloads supervelozes e streaming de alta qualidade.</li>
+                            <li>Chip A14 Bionic, o mais rápido em um smartphone.</li>
+                            <li>Sistema de câmera dupla avançado com câmeras ultra-angular e grande-angular de 12 MP; modo Noite, Deep Fusion, HDR inteligente 3, gravação em HDR 4K Dolby Vision.</li>
+                            <li>Câmera frontal TrueDepth de 12 MP com modo Noite, gravação em HDR 4K Dolby Vision.</li>
+                            <li>Classificação IP68 de resistência à água (liderança no setor).</li>
+                            <li>Compatibilidade com acessórios MagSafe para encaixe fácil e recarga sem fio mais rápida.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- PERGUNTAS E RESPOSTAS -->
+                <section class="section-container" id="product-qna">
+                    <h2 class="section-title">Perguntas e respostas</h2>
+                    
+                    <div class="qna-search-box">
+                        <h3>O que você quer saber?</h3>
+                        <div class="qna-quick-links">
+                            <button class="quick-btn">Custo e prazo de envio</button>
+                            <button class="quick-btn">Devoluções grátis</button>
+                            <button class="quick-btn">Meios de pagamento e promoções</button>
+                            <button class="quick-btn">Garantia</button>
+                        </div>
+                    </div>
+
+                    <div class="post-question-form">
+                        <h3>Pergunte ao vendedor</h3>
+                        <div class="input-q-wrapper">
+                            <input type="text" id="user-question-input" placeholder="Escreva sua pergunta..." autocomplete="off">
+                            <button class="q-submit-btn" id="submit-question-btn">Perguntar</button>
+                        </div>
+                        <span class="q-limit-hint">Limite de 2000 caracteres.</span>
+                    </div>
+
+                    <!-- Lista de Perguntas (Interativa) -->
+                    <div class="questions-list" id="qna-list-container">
+                        <h3>Últimas perguntas feitas</h3>
+                        <!-- Pergunta 1 -->
+                        <div class="qna-item">
+                            <div class="user-question">
+                                <span class="q-text">Olá, o aparelho vem lacrado na caixa original? E vem com nota fiscal?</span>
+                                <a href="#" class="q-report">Denunciar</a>
+                            </div>
+                            <div class="seller-answer">
+                                <span class="a-decorator"></span>
+                                <span class="a-text">Olá! Sim, o aparelho é 100% novo, lacrado na caixa original da Apple, acompanha Nota Fiscal emitida em seu nome e possui 1 ano de garantia oficial Apple. Aproveite, envio imediato pelo FULL! <span class="a-date">21/06/2026</span></span>
+                            </div>
+                        </div>
+                        <!-- Pergunta 2 -->
+                        <div class="qna-item">
+                            <div class="user-question">
+                                <span class="q-text">Boa tarde. A saúde da bateria está em 100% por ser lacrado?</span>
+                                <a href="#" class="q-report">Denunciar</a>
+                            </div>
+                            <div class="seller-answer">
+                                <span class="a-decorator"></span>
+                                <span class="a-text">Olá, tudo bem? Exatamente! Como o smartphone é novo e lacrado de fábrica, a saúde da bateria está em 100%. Qualquer outra dúvida estamos à disposição! <span class="a-date">20/06/2026</span></span>
+                            </div>
+                        </div>
+                        <!-- Pergunta 3 -->
+                        <div class="qna-item">
+                            <div class="user-question">
+                                <span class="q-text">O carregador vem junto na caixa?</span>
+                                <a href="#" class="q-report">Denunciar</a>
+                            </div>
+                            <div class="seller-answer">
+                                <span class="a-decorator"></span>
+                                <span class="a-text">Olá! Conforme o novo padrão global da Apple, a caixa acompanha o iPhone 12 e o Cabo de USB-C para Lightning. O adaptador de tomada é vendido separadamente. Temos carregadores homologados pela Anatel em nossa loja, se desejar pode adicionar ao carrinho. <span class="a-date">18/06/2026</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- OPINIÕES E AVALIAÇÕES -->
+                <section class="section-container" id="product-reviews">
+                    <h2 class="section-title">Opiniões sobre o produto</h2>
+                    <div class="reviews-summary-container">
+                        <!-- Bloco Geral de Nota -->
+                        <div class="rating-overall-box">
+                            <span class="rating-number">4.8</span>
+                            <div class="stars-row">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="rating-total-reviews">3.429 avaliações</span>
+                        </div>
+                        
+                        <!-- Barras de Distribuição -->
+                        <div class="rating-bars-column">
+                            <div class="bar-item" data-stars="5">
+                                <span class="bar-label">5 estrelas</span>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                                <span class="bar-count">2.914</span>
+                            </div>
+                            <div class="bar-item" data-stars="4">
+                                <span class="bar-label">4 estrelas</span>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 10%;"></div></div>
+                                <span class="bar-count">342</span>
+                            </div>
+                            <div class="bar-item" data-stars="3">
+                                <span class="bar-label">3 estrelas</span>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 3%;"></div></div>
+                                <span class="bar-count">102</span>
+                            </div>
+                            <div class="bar-item" data-stars="2">
+                                <span class="bar-label">2 estrelas</span>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 1%;"></div></div>
+                                <span class="bar-count">34</span>
+                            </div>
+                            <div class="bar-item" data-stars="1">
+                                <span class="bar-label">1 estrela</span>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 1%;"></div></div>
+                                <span class="bar-count">37</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filtros de Avaliações -->
+                    <div class="reviews-filters">
+                        <span class="filter-title">Filtrar por:</span>
+                        <button class="filter-tag active-tag" data-filter="all">Todas</button>
+                        <button class="filter-tag" data-filter="5">5 estrelas</button>
+                        <button class="filter-tag" data-filter="4">4 estrelas</button>
+                        <button class="filter-tag" data-filter="3">3 estrelas e menos</button>
+                    </div>
+
+                    <!-- Lista de Opiniões -->
+                    <div class="reviews-list-container" id="reviews-list">
+                        <!-- Review 1 -->
+                        <div class="review-card" data-rating="5">
+                            <div class="review-header">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="review-date">12 Mai 2026</span>
+                            </div>
+                            <h4 class="review-title">Excelente produto, dispensa comentários</h4>
+                            <p class="review-body">O iPhone Dispensa comentários. O processador A14 é extremamente rápido, a tela OLED tem uma qualidade impressionante e a bateria dura o dia todo com uso moderado. A câmera no modo noturno tira fotos incríveis. Recomendo fortemente.</p>
+                            <div class="review-footer">
+                                <button class="btn-helpful"><i class="fa-regular fa-thumbs-up"></i> É útil <span class="helpful-count">142</span></button>
+                                <button class="btn-report-review">Denunciar</button>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-card" data-rating="5">
+                            <div class="review-header">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="review-date">28 Abr 2026</span>
+                            </div>
+                            <h4 class="review-title">Sensacional! Cor azul maravilhosa</h4>
+                            <p class="review-body">Estou apaixonado por esse celular. A cor azul dele é linda de morrer. Vim do iPhone XR e a diferença de desempenho e de tela é colossal. O fato de ter 5G também ajuda muito para o futuro. Produto lacrado e 100% original.</p>
+                            <div class="review-footer">
+                                <button class="btn-helpful"><i class="fa-regular fa-thumbs-up"></i> É útil <span class="helpful-count">89</span></button>
+                                <button class="btn-report-review">Denunciar</button>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="review-card" data-rating="4">
+                            <div class="review-header">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span class="review-date">05 Abr 2026</span>
+                            </div>
+                            <h4 class="review-title">Muito bom, mas bateria poderia durar mais</h4>
+                            <p class="review-body">O celular é fantástico em tudo, câmeras espetaculares, tela perfeita e design premium. O único ponto que deixa um pouco a desejar é a bateria. Se usar bastante redes sociais e jogos, no fim da tarde já precisa de uma carguinha. Fora isso, nota 10.</p>
+                            <div class="review-footer">
+                                <button class="btn-helpful"><i class="fa-regular fa-thumbs-up"></i> É útil <span class="helpful-count">53</span></button>
+                                <button class="btn-report-review">Denunciar</button>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="review-card" data-rating="3">
+                            <div class="review-header">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span class="review-date">14 Mar 2026</span>
+                            </div>
+                            <h4 class="review-title">Não acompanha carregador completo</h4>
+                            <p class="review-body">Smartphone muito rápido e excelente qualidade. Mas achei um absurdo a Apple não mandar a tomada de carregar junto. Pelo preço do celular, ter que comprar a tomada por fora é bem chato. O cabo enviado não conecta nas tomadas antigas pois é USB-C.</p>
+                            <div class="review-footer">
+                                <button class="btn-helpful"><i class="fa-regular fa-thumbs-up"></i> É útil <span class="helpful-count">112</span></button>
+                                <button class="btn-report-review">Denunciar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- COLUNA DIREITA: COMPRA, FRETE, SELETORES, VENDEDOR (STICKY BOX) -->
+            <div class="product-right-column">
+                <div class="sticky-buy-box">
+                    
+                    <!-- Condição e Vendas -->
+                    <div class="product-condition-row">
+                        <span class="prod-cond">Novo</span>
+                        <span class="prod-cond-divider">|</span>
+                        <span class="prod-sales-count">+10 mil vendidos</span>
+                    </div>
+
+                    <!-- Título do Produto -->
+                    <h1 class="product-title" id="buy-box-product-title">Apple iPhone 12 (128 GB) - Preto</h1>
+
+                    <!-- Reputação em Estrelas -->
+                    <div class="product-rating-row">
+                        <div class="stars-row">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="rating-qty">3.429 opiniões</span>
+                    </div>
+
+                    <!-- Tag de Mais Vendido -->
+                    <div class="best-seller-tag">
+                        <span class="tag-label">1º MAIS VENDIDO</span>
+                        <span class="tag-category">em Celulares e Smartphones</span>
+                    </div>
+
+                    <!-- Preços -->
+                    <div class="pricing-box">
+                        <span class="original-price" id="original-price-val">R$ 3.899</span>
+                        <div class="discount-price-row">
+                            <span class="currency-symbol">R$</span>
+                            <span class="price-integer" id="price-integer-val">2.999</span>
+                            <span class="price-cents" id="price-cents-val">00</span>
+                            <span class="discount-percentage" id="discount-pct-val">23% OFF</span>
+                        </div>
+                        <p class="installment-txt">em <span class="inst-bold">10x R$ <span id="inst-value-val">299,90</span> sem juros</span></p>
+                        <a href="#" class="payment-methods-link">Ver os meios de pagamento</a>
+                    </div>
+
+                    <!-- Frete e FULL -->
+                    <div class="shipping-box">
+                        <div class="shipping-info-row">
+                            <i class="fa-solid fa-truck-fast icon-shipping-green"></i>
+                            <div class="shipping-text-col">
+                                <span class="shipping-title-green">Frete grátis <span class="full-badge">FULL</span></span>
+                                <span class="shipping-delivery-day" id="delivery-date-calc">Chegará grátis amanhã</span>
+                                <span class="shipping-location-link"><i class="fa-regular fa-map"></i> Enviar para São Paulo 01001-000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estoque Disponível -->
+                    <div class="stock-status-box">
+                        <span class="stock-title">Estoque disponível</span>
+                        <div class="quantity-dropdown-container">
+                            <label for="qty-select">Quantidade:</label>
+                            <select id="qty-select" class="qty-select-dropdown">
+                                <option value="1" selected>1 unidade</option>
+                                <option value="2">2 unidades</option>
+                                <option value="3">3 unidades</option>
+                                <option value="4">4 unidades</option>
+                                <option value="5">5 unidades (Limite máximo)</option>
+                            </select>
+                            <span class="stock-remaining" id="stock-count-label">(5 disponíveis)</span>
+                        </div>
+                    </div>
+
+                    <!-- SELETORES DE ATRIBUTOS (COR E ARMAZENAMENTO) -->
+                    <div class="attributes-selection-box">
+                        <!-- Seleção de Cor -->
+                        <div class="attribute-selector-group">
+                            <span class="attr-group-title">Cor: <strong id="selected-color-name-label">Branco</strong></span>
+                            <div class="color-options-grid" id="color-options-container">
+                                <button class="color-btn-item active-attr" data-color="white" title="Branco">
+                                    <span class="color-preview-circle color-white"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Seleção de Armazenamento -->
+                        <div class="attribute-selector-group">
+                            <span class="attr-group-title">Memória interna: <strong id="selected-storage-label">128 GB</strong></span>
+                            <div class="storage-options-row" id="storage-options-container">
+                                <button class="storage-btn-item active-attr" data-storage="128 GB">128 GB</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DE COMPRA -->
+                    <div class="buy-buttons-wrapper">
+                        <button class="btn-buy-now" id="buy-now-btn">Comprar agora</button>
+                        <button class="btn-add-to-cart" id="add-to-cart-btn">Adicionar ao carrinho</button>
+                    </div>
+
+                    <!-- Benefícios de Compra -->
+                    <div class="buyer-benefits-list">
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-arrow-rotate-left benefit-icon"></i>
+                            <span class="benefit-text"><span class="benefit-highlight">Devolução grátis.</span> Você tem 30 dias a partir da data de recebimento.</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-shield-halved benefit-icon"></i>
+                            <span class="benefit-text"><span class="benefit-highlight">Compra Garantida.</span> Receba o produto que está esperando ou devolvemos o seu dinheiro.</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-award benefit-icon"></i>
+                            <span class="benefit-text"><span class="benefit-highlight">12 meses de garantia de fábrica.</span> Original homologado pela Anatel.</span>
+                        </div>
+                    </div>
+
+                    <!-- Informações do Vendedor -->
+                    <div class="seller-card-box">
+                        <h3 class="seller-card-title">Informações sobre o vendedor</h3>
+                        
+                        <div class="seller-location">
+                            <i class="fa-solid fa-location-dot seller-icon-gray"></i>
+                            <div class="seller-loc-text">
+                                <span class="seller-loc-title">Localização</span>
+                                <span class="seller-loc-sub">São Paulo, São Paulo</span>
+                            </div>
+                        </div>
+
+                        <!-- Nível de Reputação Platinum -->
+                        <div class="seller-rep-tag-row">
+                            <i class="fa-solid fa-medal icon-platinum"></i>
+                            <div class="seller-rep-text">
+                                <span class="seller-rep-badge-title">MercadoLíder Platinum</span>
+                                <span class="seller-rep-badge-sub">É um dos melhores do site!</span>
+                            </div>
+                        </div>
+
+                        <!-- Barra de Reputação -->
+                        <div class="seller-reputation-bar">
+                            <span class="rep-bar-segment rep-red"></span>
+                            <span class="rep-bar-segment rep-orange"></span>
+                            <span class="rep-bar-segment rep-yellow"></span>
+                            <span class="rep-bar-segment rep-lightgreen"></span>
+                            <span class="rep-bar-segment rep-green active-rep"></span>
+                        </div>
+
+                        <!-- Métricas Adicionais -->
+                        <div class="seller-metrics-grid">
+                            <div class="metric-col">
+                                <span class="metric-value">+5000</span>
+                                <span class="metric-label">Vendas nos últimos 60 dias</span>
+                            </div>
+                            <div class="metric-col">
+                                <span class="metric-value"><i class="fa-regular fa-comment-dots text-green"></i></span>
+                                <span class="metric-label">Presta bom atendimento</span>
+                            </div>
+                            <div class="metric-col">
+                                <span class="metric-value"><i class="fa-regular fa-clock text-green"></i></span>
+                                <span class="metric-label">Entrega no prazo</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-seller-link">Ver mais dados deste vendedor</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL DE CHECKOUT SIMULADO -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="checkout-modal-card">
+            <button class="modal-close-btn" id="close-checkout-modal">&times;</button>
+            <div class="modal-header-icon">
+                <i class="fa-solid fa-lock text-blue"></i>
+            </div>
+            <h2>Compra 100% Segura</h2>
+            <p class="modal-sub">Finalize seu pedido com segurança via Mercado Pago</p>
+            
+            <div class="modal-product-summary">
+                <img src="assets/iphone_12_black.png" alt="Produto Resumo" class="modal-summary-img" id="modal-summary-img">
+                <div class="modal-summary-details">
+                    <span class="modal-prod-title" id="modal-product-title">Apple iPhone 12 (128 GB) - Preto</span>
+                    <span class="modal-prod-qty" id="modal-product-qty">Quantidade: 1 unidade</span>
+                    <span class="modal-prod-price" id="modal-product-price">Total: R$ 2.999,00</span>
+                </div>
+            </div>
+
+            <div class="modal-payment-options">
+                <h3>Escolha o meio de pagamento:</h3>
+                <div class="payment-option-item selected-payment">
+                    <input type="radio" name="payment-method" id="pay-card" checked>
+                    <label for="pay-card">
+                        <i class="fa-regular fa-credit-card payment-icon-details"></i>
+                        <div class="pay-text">
+                            <span class="pay-title">Cartão de Crédito</span>
+                            <span class="pay-subtitle">Aprovação imediata (até 10x sem juros)</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="payment-option-item">
+                    <input type="radio" name="payment-method" id="pay-pix">
+                    <label for="pay-pix">
+                        <i class="fa-brands fa-pix payment-icon-details pix-color"></i>
+                        <div class="pay-text">
+                            <span class="pay-title">Pix</span>
+                            <span class="pay-subtitle">Aprovação imediata (com 5% OFF extra)</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="payment-option-item">
+                    <input type="radio" name="payment-method" id="pay-boleto">
+                    <label for="pay-boleto">
+                        <i class="fa-solid fa-barcode payment-icon-details"></i>
+                        <div class="pay-text">
+                            <span class="pay-title">Boleto Bancário</span>
+                            <span class="pay-subtitle">Processamento em 1 a 2 dias úteis</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn-checkout-confirm" id="confirm-payment-btn">Finalizar Pagamento</button>
+            <div class="checkout-footer-guarantee">
+                <i class="fa-solid fa-shield-halved guarantee-icon-small"></i>
+                <span>Sua compra está garantida pelo Mercado Livre</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE SUCESSO DE COMPRA -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="success-modal-card">
+            <div class="success-icon-wrapper">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h2>Pedido Confirmado!</h2>
+            <p>Parabéns! Sua compra do <strong id="success-product-title">iPhone 12</strong> foi efetuada com sucesso.</p>
+            <div class="success-order-details">
+                <p><strong>Nº do Pedido:</strong> <span id="success-order-id">#ML-894723908</span></p>
+                <p><strong>Previsão de Entrega:</strong> <span id="success-delivery-day">Amanhã</span></p>
+                <p>O comprovante e detalhes do rastreamento foram enviados para o seu e-mail.</p>
+            </div>
+            <button class="btn-success-close" id="close-success-modal">Voltar para a página do produto</button>
+        </div>
+    </div>
+
+    <!-- RODAPÉ DO MERCADO LIVRE -->
+    <footer class="ml-footer-nav">
+        <div class="footer-container">
+            <div class="footer-info-row">
+                <div class="footer-info-col">
+                    <div class="info-card-item">
+                        <i class="fa-solid fa-credit-card info-card-icon"></i>
+                        <h4>Pague com cartão ou Pix</h4>
+                        <p>Com o Mercado Pago, você tem parcelamento sem juros no cartão ou desconto com Pix.</p>
+                        <a href="#">Como pagar</a>
+                    </div>
+                </div>
+                <div class="footer-info-col">
+                    <div class="info-card-item">
+                        <i class="fa-solid fa-box info-card-icon"></i>
+                        <h4>Frete grátis a partir de R$ 79</h4>
+                        <p>Ao selecionar produtos com o selo Full ou adicionando mais itens ao seu carrinho.</p>
+                        <a href="#">Conheça os termos</a>
+                    </div>
+                </div>
+                <div class="footer-info-col">
+                    <div class="info-card-item">
+                        <i class="fa-solid fa-shield-halved info-card-icon"></i>
+                        <h4>Segurança, do início ao fim</h4>
+                        <p>Não gostou? Devolva! No Mercado Livre não há nada que você não possa devolver.</p>
+                        <a href="#">Como te protegemos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links úteis -->
+            <div class="footer-links-row">
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Termos e condições</a>
+                <a href="#">Como cuidamos da sua privacidade</a>
+                <a href="#">Acessibilidade</a>
+                <a href="#">Contato</a>
+                <a href="#">Informações sobre seguros</a>
+            </div>
+
+            <!-- Copyright e dados oficiais -->
+            <div class="footer-copyright-row">
+                <p>Copyright © 1999-2026 Ebazar.com.br LTDA.</p>
+                <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
